@@ -1,0 +1,17 @@
+name: Run My JS Action
+
+on:
+  push:
+    branches: [main]
+
+jobs:
+  greeting:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout Code
+        uses: actions/checkout@v4
+
+      - name: Run Hello JS Action
+        uses: ./.github/actions/hello-js
+        with:
+          name: Jyoti

@@ -1,5 +1,5 @@
 name: 'Hello JS Action'
-description: 'A simple JavaScript action that says hello'
+description: 'A simple bundled JS action'
 inputs:
   name:
     description: 'Name to greet'
@@ -7,4 +7,4 @@ inputs:
     default: 'World'
 runs:
   using: 'node16'
-  main: 'index.js'
+  main: 'dist/index.js'
